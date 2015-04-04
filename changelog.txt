@@ -1,3 +1,9 @@
+v. 1.5.6.1
+---------
+Release Date: 04.04.2015
+
+    ● Вичитиний УКР переклад (DESCRIPTION.md)
+
 v. 1.5.3
 ---------
 Release Date: 22 August 2014

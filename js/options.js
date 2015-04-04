@@ -23,18 +23,20 @@ function save(id) { //Settings saving
 }
 
 $(document).ready(function () {
+    restore_ops('contestSender');
     restore_ops('deleteZoom');
     restore_ops('deleteMarks');
     restore_ops('deleteOverlays');
     restore_ops('deleteAddinf');
     restore_ops('floors');
-    restore_ops('shortlinks');
     restore_ops('helpmenu');
-    restore_ops('replytemplates');
     restore_ops('noduildingdups');
     restore_ops('noShift');
-    restore_ops('contestSender');
+    restore_ops('noDups');
     restore_ops('onlyContest');
+    restore_ops('replytemplates');
+    restore_ops('shortlinks');
+    restore_ops('votekey');
     $('label input').click(function () {
         var tempID = $(this).parent().parent().attr('id');
         save(tempID);
@@ -62,6 +64,6 @@ $(document).ready(function () {
         $(this).parent().attr('style', 'background: #D5E5FF; border-radius: 3px;')
     });
     $('label').mouseleave(function () {
-        $(this).parent().attr('style', 'background: #fff;')
+        $(this).parent().attr('style', 'background: transparent;')  // OLD-style = 'background: #fff;' (delete v.1.5.6.1)
     });
 });

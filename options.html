@@ -7,9 +7,46 @@
 	<script src="js/options.js"></script>
 </head>
 
+<style>
+table, th, td {
+    b__order: 1px solid #ccc;
+    b__ackground-color: #ddd;
+} 
+td {
+    border: 1px solid #ccc;
+    background-color: #ddd;
+}  
+.center { 
+    text-align: center;
+    }
+</style>
+    
 <body>
 	<div id="interfaceDelete">
 		<h1></h1>
+        <table>
+            <tr>
+                <td class="center"><div id="deleteZoom"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/deleteZoom.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="deleteMarks"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/deleteMarks.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="deleteOverlays"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/deleteOverlays.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="deleteAddinf"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/deleteAddinf.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="noShift"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/noShift.png"></td>
+            </tr>
+        </table>
+<!--
 		<div id="deleteZoom">
 			<label><input type="checkbox"></label><span></span>
 			<div><img src="img/deleteZoom.png"></div>
@@ -30,9 +67,48 @@
 			<label><input type="checkbox"></label><span></span>
 			<div><img src="img/noShift.png"></div>
 		</div>
+-->
 	</div>
-	<div id="functions">
+
+    <div id="functions">
 		<h1></h1>
+        <table border="0" style="">
+            <!--
+            <tr>
+                <td class="center"><div class="cb"></div></td>
+                <td></td>
+            </tr>
+            -->
+            <tr>
+                <td class="center"><div id="floors"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/floors.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="shortlinks"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/shortlinks.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="helpmenu"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/helpmenu.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="replytemplates"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/replytemplates.png"></td>
+            </tr>
+            <tr>
+                <td class="center"><div id="noduildingdups"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/noduildingdups.png"></td>
+            </tr>
+            <tr>
+                <td class="center">[BETA]<br /><br /><div id="noDups"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/nodups.png"></td>
+            </tr> 
+            <tr>
+                <td class="center">[IDEA]<br /><br /><div id="votekey"><label><input type="checkbox"></label><span></span></div></td>
+                <td><img src="img/votekey.png"></td>
+            </tr> 
+        </table>
+<!--
 		<div id="floors">
 			<label><input type="checkbox"></label><span></span>
 			<div><img src="img/floors.png"></div>
@@ -55,6 +131,8 @@
 			<label><input type="checkbox"></label><span></span>
 			<div><img src="img/noduildingdups.png"></div>
 		</div>
+-->
 	</div>
+
 </body>
 </html>
